@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 
 import {auth} from '../../firebase/firebase.utils';
 
-import {ReactComponent as logo} from '../../res/crown.svg.svg';
+import {ReactComponent as Logo} from '../../res/crown.svg';
 
 import './header.scss';
 
 const Header = ({ currentUser }) =>(
 	<div className='header'>
 		<Link className='logo-container' to='/'>
-			<logo className='logo' 
+			<Logo className='logo' 
 			/>
 		</Link>
 		<div className='options'>
